@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320" role="img" aria-label="AI engineering journey: shipping now, learning now, and planned next">
+  <defs>
+    <linearGradient id="track" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2d5ef5"/>
+      <stop offset="45%" stop-color="#2d5ef5" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#2d5ef5" stop-opacity="0.12"/>
+    </linearGradient>
+    <pattern id="g2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+    </pattern>
+    <clipPath id="f2"><rect width="1000" height="320" rx="16"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#f2)" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif">
+    <rect width="1000" height="320" fill="#08080a"/>
+    <rect width="1000" height="320" fill="url(#g2)"/>
+
+    <text x="48" y="52" font-size="13" font-weight="600" fill="#62666e" letter-spacing="2.4">THE PATH TO AI ENGINEERING</text>
+
+    <!-- progress track -->
+    <rect x="48" y="104" width="904" height="2" fill="#222227"/>
+    <rect x="48" y="104" width="904" height="2" fill="url(#track)">
+      <animate attributeName="width" from="0" to="904" dur="1.6s" fill="freeze"/>
+    </rect>
+
+    <!-- STAGE 1 — shipping -->
+    <circle cx="112" cy="105" r="9" fill="#2d5ef5"/>
+    <circle cx="112" cy="105" r="9" fill="none" stroke="#2d5ef5" stroke-opacity="0.5">
+      <animate attributeName="r" values="9;20;9" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;0;0.5" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="48" y="158" font-size="12" font-weight="700" fill="#2d5ef5" letter-spacing="1.6">SHIPPING NOW</text>
+    <text x="48" y="184" font-size="17" font-weight="600" fill="#ffffff">Production systems</text>
+    <text x="48" y="214" font-size="13.5" fill="#8d919a">Next.js 16 · React 19 · TypeScript</text>
+    <text x="48" y="236" font-size="13.5" fill="#8d919a">Postgres · server actions</text>
+    <text x="48" y="258" font-size="13.5" fill="#8d919a">Email + lead automation</text>
+    <text x="48" y="280" font-size="13.5" fill="#8d919a">Bilingual (EN/DE) delivery</text>
+
+    <!-- STAGE 2 — learning -->
+    <circle cx="452" cy="105" r="9" fill="#08080a" stroke="#2d5ef5" stroke-width="2.5"/>
+    <text x="388" y="158" font-size="12" font-weight="700" fill="#7d9bff" letter-spacing="1.6">LEARNING NOW</text>
+    <text x="388" y="184" font-size="17" font-weight="600" fill="#ffffff">Toward AI engineering</text>
+    <text x="388" y="214" font-size="13.5" fill="#8d919a">Python for AI work</text>
+    <text x="388" y="236" font-size="13.5" fill="#8d919a">LLM APIs &amp; prompt design</text>
+    <text x="388" y="258" font-size="13.5" fill="#8d919a">Agent &amp; tool-calling patterns</text>
+    <text x="388" y="280" font-size="13.5" fill="#8d919a">Retrieval fundamentals</text>
+
+    <!-- STAGE 3 — planned -->
+    <circle cx="792" cy="105" r="8" fill="#08080a" stroke="#3a3a42" stroke-width="2" stroke-dasharray="3 3"/>
+    <text x="728" y="158" font-size="12" font-weight="700" fill="#62666e" letter-spacing="1.6">PLANNED NEXT</text>
+    <text x="728" y="184" font-size="17" font-weight="600" fill="#c9ccd2">Applied AI in GTM</text>
+    <text x="728" y="214" font-size="13.5" fill="#62666e">AI-assisted ICP research</text>
+    <text x="728" y="236" font-size="13.5" fill="#62666e">Agentic outbound workflows</text>
+    <text x="728" y="258" font-size="13.5" fill="#62666e">RAG over sales knowledge</text>
+    <text x="728" y="280" font-size="13.5" fill="#62666e">Open-source AI tooling</text>
+
+    <text x="952" y="52" font-size="12" fill="#3a3a42" text-anchor="end">honest status · not a skills list</text>
+  </g>
+  <rect width="999" height="319" x="0.5" y="0.5" rx="16" fill="none" stroke="#222227"/>
+</svg>
