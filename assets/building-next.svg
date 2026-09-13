@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="AI plus automation plus systems plus GTM equals new products — building what is next">
+  <defs><pattern id="gridb" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="gb" cx="0.5" cy="1" r="0.75">
+      <stop offset="0%" stop-color="#2d5ef5" stop-opacity="0.2"/><stop offset="100%" stop-color="#2d5ef5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2d5ef5" stop-opacity="0"/><stop offset="50%" stop-color="#2d5ef5" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#2d5ef5" stop-opacity="0"/>
+    </linearGradient><clipPath id="clipb"><rect width="1000" height="300" rx="18"/></clipPath></defs>
+  <g clip-path="url(#clipb)">
+    <rect width="1000" height="300" fill="#08080a"/>
+    <rect width="1000" height="300" fill="url(#gridb)"/><rect width="1000" height="300" fill="url(#gb)"/>
+    <text x="500.0" y="66" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="600" fill="#2d5ef5" letter-spacing="4.5">THE THESIS</text>
+    <text x="221.0" y="152" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="21" font-weight="700" fill="#ffffff" letter-spacing="2.4">AI</text><text x="275.5" y="150" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="20" fill="#2d5ef5">+</text><text x="396.0" y="152" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="21" font-weight="700" fill="#ffffff" letter-spacing="2.4">AUTOMATION</text><text x="516.5" y="150" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="20" fill="#2d5ef5">+</text><text x="612.25" y="152" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="21" font-weight="700" fill="#ffffff" letter-spacing="2.4">SYSTEMS</text><text x="708.0" y="150" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="20" fill="#2d5ef5">+</text><text x="770.75" y="152" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="21" font-weight="700" fill="#ffffff" letter-spacing="2.4">GTM</text>
+    <rect x="230" y="180" width="540" height="1.5" fill="url(#rule)"/>
+    <rect x="230" y="180" width="120" height="1.5" fill="#5b82ff">
+      <animate attributeName="x" values="230;650;230" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="500.0" y="240" text-anchor="middle" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="40" font-weight="700" fill="#ffffff" letter-spacing="-1">NEW PRODUCTS</text>
+    <text x="500.0" y="272" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11.5" font-weight="600" fill="#8d919a" letter-spacing="4">BUILDING WHAT&#8217;S NEXT &#8594;</text>
+  </g>
+  <rect x="0.75" y="0.75" width="998.5" height="298.5" rx="18" fill="none" stroke="#1e1e24" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 212" width="1000" height="212" role="img" aria-label="ForgeGTM — ACTIVE BUILD">
+  <defs><pattern id="gridp01" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="gp01" cx="0.06" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#2d5ef5" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#2d5ef5" stop-opacity="0"/>
+    </radialGradient><clipPath id="clipp01"><rect width="1000" height="212" rx="16"/></clipPath></defs>
+  <g clip-path="url(#clipp01)">
+    <rect width="1000" height="212" fill="#08080a"/>
+    <rect width="1000" height="212" fill="url(#gridp01)"/>
+    <rect width="1000" height="212" fill="url(#gp01)"/>
+    <text x="48" y="118" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="58" font-weight="700" fill="#2d5ef5" fill-opacity="0.22">01</text>
+    <rect x="823.6" y="40" width="128.4" height="28" rx="14" fill="#2d5ef5" fill-opacity="0.13" stroke="#2d5ef5" stroke-opacity="0.45"/>
+    <circle cx="841.6" cy="54" r="3.6" fill="#5b82ff"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    <text x="851.6" y="58" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" font-weight="600" fill="#5b82ff" letter-spacing="1.5">ACTIVE BUILD</text>
+    <text x="140" y="60" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" font-weight="600" fill="#5b82ff" letter-spacing="2.6">PRODUCT &#183; GTM INFRASTRUCTURE</text>
+    <text x="138" y="98" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="28" font-weight="700" fill="#ffffff" letter-spacing="-0.5">ForgeGTM</text>
+    <text x="140" y="128" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="14.5" fill="#8d919a">Bilingual marketing site, Postgres lead pipeline, dual-transport email and a gated lead dashboard.</text>
+    <rect x="140" y="150" width="100.0" height="26" rx="6" fill="#101016" stroke="#2a2a32"/><text x="190.0" y="167" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#c9ccd2">TypeScript</text><rect x="249.0" y="150" width="100.0" height="26" rx="6" fill="#101016" stroke="#2a2a32"/><text x="299.0" y="167" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#c9ccd2">Next.js 16</text><rect x="358.0" y="150" width="85.2" height="26" rx="6" fill="#101016" stroke="#2a2a32"/><text x="400.6" y="167" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#c9ccd2">React 19</text><rect x="452.2" y="150" width="100.0" height="26" rx="6" fill="#101016" stroke="#2a2a32"/><text x="502.2" y="167" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#c9ccd2">PostgreSQL</text><rect x="561.2" y="150" width="129.60000000000002" height="26" rx="6" fill="#101016" stroke="#2a2a32"/><text x="626.0" y="167" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#c9ccd2">Server Actions</text><rect x="699.8000000000001" y="150" width="55.6" height="26" rx="6" fill="#101016" stroke="#2a2a32"/><text x="727.6" y="167" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" fill="#c9ccd2">i18n</text><text x="948" y="170" text-anchor="end" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="12" font-weight="700" fill="#5b82ff" letter-spacing="1.8">EXPLORE &#8594;</text>
+    <rect x="0" y="0" width="4" height="212" fill="#2d5ef5" fill-opacity="0.9"/>
+  </g>
+  <rect x="0.75" y="0.75" width="998.5" height="210.5" rx="16" fill="none" stroke="#2a2a32" stroke-width="1.5"/>
+</svg>

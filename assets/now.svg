@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 190" width="880" height="190" role="img" aria-label="Currently building: ForgeGTM active, AI engineering in progress, next build planned">
+  <defs><pattern id="gridn" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern><clipPath id="clipn"><rect width="880" height="190" rx="16"/></clipPath></defs>
+  <g clip-path="url(#clipn)">
+    <rect width="880" height="190" fill="#08080a"/>
+    <rect width="880" height="190" fill="url(#gridn)"/>
+    <circle cx="62" cy="44" r="4.5" fill="#2d5ef5">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="62" cy="44" r="4.5" fill="none" stroke="#2d5ef5">
+      <animate attributeName="r" values="4.5;14;4.5" dur="2.6s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="2.6s" repeatCount="indefinite"/></circle>
+    <text x="80" y="49" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5" font-weight="600" fill="#2d5ef5" letter-spacing="3.6">CURRENTLY BUILDING</text>
+    <rect x="296" y="43.5" width="540" height="1" fill="#1e1e24"/>
+    <rect x="44" y="74" width="256" height="84" rx="10" fill="#0c0c10" stroke="#1e1e24"/><rect x="44" y="74" width="3" height="84" rx="1.5" fill="#2d5ef5"/><text x="66" y="104" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="21" font-weight="600" fill="#ffffff">ForgeGTM</text><text x="66" y="128" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="14" fill="#8d919a">GTM + automation systems</text><text x="66" y="148" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="600" fill="#5b82ff" letter-spacing="1.8">ACTIVE</text><circle cx="276" cy="96" r="4" fill="#5b82ff"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></circle><rect x="318" y="74" width="256" height="84" rx="10" fill="#0c0c10" stroke="#1e1e24"/><rect x="318" y="74" width="3" height="84" rx="1.5" fill="#585c65"/><text x="340" y="104" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="21" font-weight="600" fill="#ffffff">AI Engineering</text><text x="340" y="128" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="14" fill="#8d919a">Learning + experimenting</text><text x="340" y="148" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="600" fill="#8d919a" letter-spacing="1.8">IN PROGRESS</text><rect x="592" y="74" width="256" height="84" rx="10" fill="#0c0c10" stroke="#1e1e24"/><rect x="592" y="74" width="3" height="84" rx="1.5" fill="#2a2a32"/><text x="614" y="104" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="21" font-weight="600" fill="#c9ccd2">Next</text><text x="614" y="128" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="14" fill="#585c65">AI + automation product</text><text x="614" y="148" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="11" font-weight="600" fill="#3a3d45" letter-spacing="1.8">PLANNED</text>
+  </g>
+  <rect x="0.75" y="0.75" width="878.5" height="188.5" rx="16" fill="none" stroke="#1e1e24" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" width="1000" height="24" role="img" aria-label="">
+  <defs><linearGradient id="dl" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#2d5ef5" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#2d5ef5" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#2d5ef5" stop-opacity="0"/>
+  </linearGradient></defs>
+  <rect y="11.5" width="1000" height="1" fill="#1e1e24"/>
+  <rect x="0" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="50" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="100" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="150" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="200" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="250" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="300" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="350" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="400" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="450" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="500" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="550" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="600" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="650" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="700" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="750" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="800" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="850" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="900" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="950" y="9.0" width="1" height="6" fill="#2a2a32"/><rect x="1000" y="9.0" width="1" height="6" fill="#2a2a32"/>
+  <rect y="11.0" width="190" height="2" fill="url(#dl)">
+    <animate attributeName="x" values="-190;1000" dur="7s" repeatCount="indefinite"/>
+  </rect>
+</svg>
