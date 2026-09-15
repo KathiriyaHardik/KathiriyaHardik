@@ -1,0 +1,62 @@
+# Keeps the BUILD LOG table in README.md derived from real commit history.
+#
+# The log is generated rather than written so it cannot drift out of date.
+# Only the block between the BUILD-LOG markers is rewritten; if nothing has
+# changed the job exits without a commit, so this never produces empty noise
+# in the history.
+name: Update build log and activity card
+
+on:
+  schedule:
+    # Once a day, shortly after midnight UTC.
+    - cron: "17 0 * * *"
+  # So the first run does not have to wait for the schedule.
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    # Never re-trigger on the commit this workflow itself makes.
+    paths-ignore:
+      - "README.md"
+      - "assets/stats.svg"
+
+# Prevents a scheduled run and a push run racing each other onto main.
+concurrency:
+  group: build-log
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Regenerate the build log
+        run: node scripts/build-log.mjs
+        env:
+          # The default token is enough: everything read here is public.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Regenerate the activity card
+        run: node scripts/stats-card.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit if anything changed
+        run: |
+          if git diff --quiet -- README.md assets/stats.svg; then
+            echo "Build log and activity card already current — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/stats.svg
+          git commit -m "Update build log and activity card"
+          git push
