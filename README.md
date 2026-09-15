@@ -8,7 +8,7 @@
 
 <br/>
 
-[`IDENTITY`](#identity) · [`MISSION`](#mission) · [`FORGEGTM`](#forgegtm) · [`AI ENGINEERING`](#ai) · [`SYSTEMS`](#systems) · [`PROJECTS`](#projects) · [`ACTIVITY`](#activity) · [`CONNECT`](#connect)
+[`IDENTITY`](#identity) · [`MISSION`](#mission) · [`FORGEGTM`](#forgegtm) · [`AI ENGINEERING`](#ai) · [`SYSTEMS`](#systems) · [`PROJECTS`](#projects) · [`BUILD LOG`](#log) · [`ACTIVITY`](#activity) · [`CONNECT`](#connect)
 
 </div>
 
@@ -41,7 +41,7 @@ ICP definition · buying-signal research · email infrastructure · campaign arc
 
 **`→` &nbsp;The system underneath**
 
-TypeScript · Next.js · Postgres · server actions · automated lead capture and notification · bilingual delivery · SEO infrastructure
+I don't hand the build off. The targeting logic, the sending infrastructure and the software that captures and routes what comes back are all things I write — which is why the two columns keep collapsing into one job.
 
 </td>
 </tr>
@@ -137,6 +137,10 @@ The ForgeGTM platform is a real production codebase, not a landing page:
 - 🔐 **Protected lead dashboard** — `/admin` behind HTTP Basic, `noindex`, never cached, and it 503s rather than falling open when unconfigured
 - ✅ **Real server-side validation** — free-email-domain rejection, URL normalisation, typed per-field error keys
 - 🔎 **Full SEO surface** — sitemap, robots, generated Open Graph images, canonical origins, hreflang alternates
+- 📤 **Lead CSV export** — the dashboard queue exports straight out for whoever works it
+- 🪟 **Strategy call as a modal** — the form opens in place from every CTA rather than sending visitors to a separate page
+- 👤 **Team/founder section** — driven from content, so it stays translatable like the rest of the site
+- 🧪 **Credential checker** — `scripts/check-email.mjs` verifies the mail setup before a real lead depends on it
 - 📚 **8 long-form insight articles + 3 case studies**, written in both languages
 
 </details>
@@ -251,10 +255,7 @@ AI-assisted ICP research · agentic outbound workflows · RAG over sales knowled
 
 <div align="center">
 
-<a href="https://github.com/KathiriyaHardik/forgegtm"><img src="https://img.shields.io/github/languages/top/KathiriyaHardik/forgegtm?style=flat-square&labelColor=0a0a0c&color=2d5ef5" alt="Top language" /></a>
-<a href="https://github.com/KathiriyaHardik/forgegtm"><img src="https://img.shields.io/github/languages/code-size/KathiriyaHardik/forgegtm?style=flat-square&labelColor=0a0a0c&color=2d5ef5" alt="Code size" /></a>
-<a href="https://github.com/KathiriyaHardik/forgegtm/commits"><img src="https://img.shields.io/github/last-commit/KathiriyaHardik/forgegtm?style=flat-square&labelColor=0a0a0c&color=2d5ef5" alt="Last commit" /></a>
-<a href="https://github.com/KathiriyaHardik/forgegtm/commits"><img src="https://img.shields.io/github/commit-activity/m/KathiriyaHardik/forgegtm?style=flat-square&labelColor=0a0a0c&color=2d5ef5" alt="Commits per month" /></a>
+<a href="https://github.com/KathiriyaHardik/forgegtm"><img src="https://img.shields.io/github/languages/top/KathiriyaHardik/forgegtm?style=flat-square&labelColor=0a0a0c&color=2d5ef5" alt="Top language" /></a> <a href="https://github.com/KathiriyaHardik/forgegtm"><img src="https://img.shields.io/github/languages/code-size/KathiriyaHardik/forgegtm?style=flat-square&labelColor=0a0a0c&color=2d5ef5" alt="Code size" /></a> <a href="https://github.com/KathiriyaHardik/forgegtm/commits"><img src="https://img.shields.io/github/last-commit/KathiriyaHardik/forgegtm?style=flat-square&labelColor=0a0a0c&color=2d5ef5" alt="Last commit" /></a> <a href="https://github.com/KathiriyaHardik/forgegtm/commits"><img src="https://img.shields.io/github/commit-activity/m/KathiriyaHardik/forgegtm?style=flat-square&labelColor=0a0a0c&color=2d5ef5" alt="Commits per month" /></a>
 
 <sub>Live from the repository — these numbers move on their own.</sub>
 
@@ -264,32 +265,37 @@ AI-assisted ICP research · agentic outbound workflows · RAG over sales knowled
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<h2 id="activity"><img src="assets/label-07.svg" height="30" alt="07 — ACTIVITY" /></h2>
+<h2 id="log"><img src="assets/label-07.svg" height="30" alt="07 — BUILD LOG" /></h2>
+
+What actually landed, most recent first. This table is generated from commit history by a GitHub Action — it is not maintained by hand, so it cannot quietly drift out of date the way a written changelog does.
+
+<!-- BUILD-LOG:START -->
+
+| Date | Repo | What shipped |
+|:--|:--|:--|
+| `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Add a second placeholder profile, and fix the avatar monogram |
+| `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Drop the unsent-email banner from the dashboard |
+| `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Fix the modal never opening from the main CTAs |
+| `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Rebuild the strategy-call form as a modal |
+| `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Add lead CSV export and a founder section |
+| `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Move to connect.forgegtm@gmail.com and fix a form DOM crash |
+| `2026-09-13` | [`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik) | Rebuild the profile as a designed system rather than a README |
+| `2026-09-13` | [`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik) | Render the ForgeGTM mark statically in the banner |
+
+<sub>Last 8 commits, newest first — regenerated daily by GitHub Actions, never hand-written.</sub>
+<!-- BUILD-LOG:END -->
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
+<h2 id="activity"><img src="assets/label-08.svg" height="30" alt="08 — ACTIVITY" /></h2>
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/SYSTEM-STATUS-2d5ef5?style=flat-square&labelColor=0a0a0c" alt="System status" />
-<img src="https://img.shields.io/github/last-commit/KathiriyaHardik/forgegtm?style=flat-square&label=LAST%20COMMIT&labelColor=0a0a0c&color=1e1e24" alt="Last commit" />
-<img src="https://img.shields.io/github/commit-activity/m/KathiriyaHardik/forgegtm?style=flat-square&label=THROUGHPUT&labelColor=0a0a0c&color=1e1e24" alt="Commit throughput" />
-<img src="https://img.shields.io/github/languages/top/KathiriyaHardik/forgegtm?style=flat-square&label=PRIMARY&labelColor=0a0a0c&color=1e1e24" alt="Primary language" />
+<img src="https://img.shields.io/github/last-commit/KathiriyaHardik/forgegtm?style=flat-square&label=LAST%20COMMIT&labelColor=0a0a0c&color=2d5ef5" alt="Last commit" /> <img src="https://img.shields.io/github/commit-activity/m/KathiriyaHardik/forgegtm?style=flat-square&label=THROUGHPUT&labelColor=0a0a0c&color=1e1e24" alt="Commit throughput" />
 
 <br/><br/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=KathiriyaHardik&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=KathiriyaHardik&theme=github" alt="Profile summary" width="100%" />
-</picture>
-
-<br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=KathiriyaHardik&theme=github_dark" />
-  <img height="190" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=KathiriyaHardik&theme=github" alt="Commit, PR and issue stats" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=KathiriyaHardik&theme=github_dark" />
-  <img height="190" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=KathiriyaHardik&theme=github" alt="Most used languages by commit" />
-</picture>
+<img src="assets/stats.svg" alt="GitHub activity — contributions, commits, pull requests, public repos and primary language" width="100%" />
 
 <br/>
 
@@ -298,33 +304,24 @@ AI-assisted ICP research · agentic outbound workflows · RAG over sales knowled
   <img height="180" src="https://streak-stats.demolab.com?user=KathiriyaHardik&background=ffffff&border=e5e6ea&stroke=e5e6ea&ring=2d5ef5&fire=2d5ef5&currStreakNum=0a0a0c&sideNums=0a0a0c&currStreakLabel=2d5ef5&sideLabels=62666e&dates=8d919a&border_radius=12" alt="Contribution streak" />
 </picture>
 
-<!-- CONTRIBUTION SNAKE — uncomment after the workflow has run once.
-     It stays commented out only because the SVGs do not exist until the
-     first "Generate contribution snake" run publishes the `output` branch.
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KathiriyaHardik/KathiriyaHardik/output/snake-dark.svg" />
   <img src="https://raw.githubusercontent.com/KathiriyaHardik/KathiriyaHardik/output/snake-light.svg" alt="Contribution snake animation" width="100%" />
 </picture>
--->
+
+<sub>Regenerated every 12 hours by GitHub Actions from the live contribution graph.</sub>
 
 </div>
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-<h2 id="connect"><img src="assets/label-08.svg" height="30" alt="08 — CONNECT" /></h2>
+<h2 id="connect"><img src="assets/label-09.svg" height="30" alt="09 — CONNECT" /></h2>
 
 Building ForgeGTM in Stuttgart. Open to conversations about **B2B outbound**, **GTM systems**, and **applied AI in go-to-market** — and happy to talk with anyone walking a similar path from building into AI engineering.
 
 <div align="center">
 
-<a href="mailto:contact.forgegtm@gmail.com">
-  <img src="https://img.shields.io/badge/ForgeGTM-contact.forgegtm@gmail.com-2d5ef5?style=for-the-badge&logo=maildotru&logoColor=white&labelColor=0a0a0c" alt="Email ForgeGTM" />
-</a>
-&nbsp;
-<a href="mailto:kathiriyahardik.hk@gmail.com">
-  <img src="https://img.shields.io/badge/Personal-kathiriyahardik.hk@gmail.com-0a0a0c?style=for-the-badge&logo=gmail&logoColor=2d5ef5&labelColor=0a0a0c" alt="Personal email" />
-</a>
+<a href="mailto:connect.forgegtm@gmail.com"><img src="https://img.shields.io/badge/ForgeGTM-connect.forgegtm@gmail.com-2d5ef5?style=for-the-badge&logo=maildotru&logoColor=white&labelColor=0a0a0c" alt="Email ForgeGTM" /></a> &nbsp; <a href="mailto:kathiriyahardik.hk@gmail.com"><img src="https://img.shields.io/badge/Personal-kathiriyahardik.hk@gmail.com-0a0a0c?style=for-the-badge&logo=gmail&logoColor=2d5ef5&labelColor=0a0a0c" alt="Personal email" /></a>
 
 </div>
 

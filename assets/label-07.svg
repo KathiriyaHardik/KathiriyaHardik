@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 46" width="207" height="46" role="img" aria-label="07 — ACTIVITY">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 46" width="220" height="46" role="img" aria-label="07 — BUILD LOG">
   <rect x="0" y="9" width="30" height="28" rx="6" fill="#2d5ef5" fill-opacity="0.14" stroke="#2d5ef5" stroke-opacity="0.45"/>
   <text x="15" y="28" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="13" font-weight="700" fill="#5b82ff">07</text>
-  <text x="46" y="29" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="15.5" font-weight="600" fill="#ffffff" letter-spacing="3.6">ACTIVITY</text>
-  <rect x="161.2" y="22" width="40.0" height="1" fill="#2a2a32"/>
+  <text x="46" y="29" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="15.5" font-weight="600" fill="#ffffff" letter-spacing="3.6">BUILD LOG</text>
+  <rect x="174.1" y="22" width="40.0" height="1" fill="#2a2a32"/>
 </svg>

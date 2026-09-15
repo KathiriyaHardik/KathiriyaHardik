@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 208" width="1000" height="208" role="img" aria-label="GitHub activity: 26 contributions, 19 commits, 5 pull requests, 2 public repos, 97.4% typescript, as of 2026-09-15">
+  <defs>
+    <pattern id="gs" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <clipPath id="cs"><rect width="1000" height="208" rx="16"/></clipPath>
+  </defs>
+  <g clip-path="url(#cs)">
+    <rect width="1000" height="208" fill="#08080a"/>
+    <rect width="1000" height="208" fill="url(#gs)"/>
+    <circle cx="62" cy="46" r="4.5" fill="#2d5ef5">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="80" y="51" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="12.5" font-weight="600" fill="#2d5ef5" letter-spacing="3.6">SYSTEM ACTIVITY</text>
+    <rect x="272" y="45.5" width="492" height="1" fill="#1e1e24"/>
+    <text x="944" y="50" text-anchor="end" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#3a3d45" letter-spacing="1.4">LAST 12 MONTHS &#183; AS OF 2026-09-15</text>
+    
+    <rect x="56" y="88" width="164" height="84" rx="10" fill="#0c0c10" stroke="#1e1e24"/>
+    <rect x="56" y="88" width="164" height="2" rx="1" fill="#2d5ef5" opacity="0.8"/>
+    <text x="74" y="134" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#ffffff" letter-spacing="-0.8">26</text>
+    <text x="74" y="156" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" font-weight="600" fill="#8d919a" letter-spacing="1.5">CONTRIBUTIONS</text>
+
+    <rect x="237" y="88" width="164" height="84" rx="10" fill="#0c0c10" stroke="#1e1e24"/>
+    <rect x="237" y="88" width="164" height="2" rx="1" fill="#2a2a32" />
+    <text x="255" y="134" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#ffffff" letter-spacing="-0.8">19</text>
+    <text x="255" y="156" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" font-weight="600" fill="#8d919a" letter-spacing="1.5">COMMITS</text>
+
+    <rect x="418" y="88" width="164" height="84" rx="10" fill="#0c0c10" stroke="#1e1e24"/>
+    <rect x="418" y="88" width="164" height="2" rx="1" fill="#2a2a32" />
+    <text x="436" y="134" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#ffffff" letter-spacing="-0.8">5</text>
+    <text x="436" y="156" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" font-weight="600" fill="#8d919a" letter-spacing="1.5">PULL REQUESTS</text>
+
+    <rect x="599" y="88" width="164" height="84" rx="10" fill="#0c0c10" stroke="#1e1e24"/>
+    <rect x="599" y="88" width="164" height="2" rx="1" fill="#2a2a32" />
+    <text x="617" y="134" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#ffffff" letter-spacing="-0.8">2</text>
+    <text x="617" y="156" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" font-weight="600" fill="#8d919a" letter-spacing="1.5">PUBLIC REPOS</text>
+
+    <rect x="780" y="88" width="164" height="84" rx="10" fill="#0c0c10" stroke="#1e1e24"/>
+    <rect x="780" y="88" width="164" height="2" rx="1" fill="#2a2a32" />
+    <text x="798" y="134" font-family="'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#ffffff" letter-spacing="-0.8">97.4%</text>
+    <text x="798" y="156" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" font-weight="600" fill="#8d919a" letter-spacing="1.5">TYPESCRIPT</text>
+
+  </g>
+  <rect x="0.75" y="0.75" width="998.5" height="206.5" rx="16" fill="none" stroke="#1e1e24" stroke-width="1.5"/>
+</svg>
