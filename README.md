@@ -273,14 +273,14 @@ What actually landed, most recent first. This table is generated from commit his
 
 | Date | Repo | What shipped |
 |:--|:--|:--|
+| `2026-09-15` | [`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik) | Add build-log and activity-card workflow |
+| `2026-09-15` | [`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik) | Correct the contact address, surface the snake, and generate the activity card |
 | `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Add a second placeholder profile, and fix the avatar monogram |
 | `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Drop the unsent-email banner from the dashboard |
 | `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Fix the modal never opening from the main CTAs |
 | `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Rebuild the strategy-call form as a modal |
 | `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Add lead CSV export and a founder section |
 | `2026-09-15` | [`forgegtm`](https://github.com/KathiriyaHardik/forgegtm) | Move to connect.forgegtm@gmail.com and fix a form DOM crash |
-| `2026-09-13` | [`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik) | Rebuild the profile as a designed system rather than a README |
-| `2026-09-13` | [`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik) | Render the ForgeGTM mark statically in the banner |
 
 <sub>Last 8 commits, newest first — regenerated daily by GitHub Actions, never hand-written.</sub>
 <!-- BUILD-LOG:END -->
