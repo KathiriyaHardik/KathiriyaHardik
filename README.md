@@ -293,16 +293,11 @@ What actually landed, most recent first. This table is generated from commit his
 
 <img src="https://img.shields.io/github/last-commit/KathiriyaHardik/forgegtm?style=flat-square&label=LAST%20COMMIT&labelColor=0a0a0c&color=2d5ef5" alt="Last commit" /> <img src="https://img.shields.io/github/commit-activity/m/KathiriyaHardik/forgegtm?style=flat-square&label=THROUGHPUT&labelColor=0a0a0c&color=1e1e24" alt="Commit throughput" />
 
-<br/><br/>
-
-<img src="assets/stats.svg" alt="GitHub activity — contributions, commits, pull requests, public repos and primary language" width="100%" />
-
 <br/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=KathiriyaHardik&background=08080a&border=1e1e24&stroke=1e1e24&ring=2d5ef5&fire=2d5ef5&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=2d5ef5&sideLabels=8d919a&dates=585c65&border_radius=12" />
-  <img height="180" src="https://streak-stats.demolab.com?user=KathiriyaHardik&background=ffffff&border=e5e6ea&stroke=e5e6ea&ring=2d5ef5&fire=2d5ef5&currStreakNum=0a0a0c&sideNums=0a0a0c&currStreakLabel=2d5ef5&sideLabels=62666e&dates=8d919a&border_radius=12" alt="Contribution streak" />
-</picture>
+<img src="assets/stats.svg" alt="GitHub activity — commits, pull requests, active days, public repos and primary language share" width="100%" />
+
+<br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KathiriyaHardik/KathiriyaHardik/output/snake-dark.svg" />
