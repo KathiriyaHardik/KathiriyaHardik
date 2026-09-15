@@ -59,4 +59,17 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md assets/stats.svg
           git commit -m "Update build log and activity card"
-          git push
+
+          # Another push can land between checkout and here, which rejects this
+          # one as non-fast-forward. Rebase onto whatever arrived and try again
+          # rather than failing the run over a race.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected — rebasing onto origin/main and retrying."
+            git pull --rebase origin "${GITHUB_REF_NAME}" || exit 1
+          done
+          echo "Could not push after 3 attempts."
+          exit 1
