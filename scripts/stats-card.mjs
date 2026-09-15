@@ -1,11 +1,19 @@
 /**
- * Generates assets/stats.svg — the activity panel — from the GitHub API.
+ * Generates assets/stats.svg — the activity panel — from the public REST API.
  *
- * This replaces third-party stat cards that were both off-brand and wrong:
- * at time of writing they reported 14 contributions and 10 commits where the
- * API reported 26 and 19. On a profile whose whole argument is that nothing is
+ * This replaces third-party stat cards that were both off-brand and wrong: at
+ * time of writing they reported 14 contributions and 10 commits where the API
+ * reported 26 and 19. On a profile whose whole argument is that nothing is
  * claimed before it ships, a widget that quietly undercounts is worse than no
  * widget at all.
+ *
+ * Deliberately REST, not GraphQL. `contributionsCollection` returns different
+ * totals depending on who is asking -- the Actions GITHUB_TOKEN saw 19 where a
+ * user token saw 26 -- so building the card on it reintroduced exactly the
+ * undercount it was meant to fix. Every number here is public, identical for
+ * any caller, and checkable by hand against the repo.
+ *
+ * Merge commits are excluded: they are plumbing, not work.
  *
  * Numbers are stamped with the date they were generated, so if the workflow
  * ever stops running the card reads as stale rather than as wrong.
@@ -16,57 +24,63 @@
 import { writeFileSync } from "node:fs";
 
 const USER = process.env.PROFILE_USER || "KathiriyaHardik";
-const TOKEN = process.env.GITHUB_TOKEN;
-if (!TOKEN) throw new Error("GITHUB_TOKEN is required for the GraphQL API");
+const TOKEN = process.env.GITHUB_TOKEN;   // optional: raises the rate limit
 
 const BG = "#08080a", PANEL = "#0c0c10", BORDER = "#1e1e24", BORDER2 = "#2a2a32";
 const ACCENT = "#2d5ef5", ACCENT2 = "#5b82ff", TEXT = "#ffffff", MUTED = "#8d919a", DIM = "#3a3d45";
 const SANS = "'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif";
 const MONO = "ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace";
 
-const gql = async (query) => {
-  const res = await fetch("https://api.github.com/graphql", {
-    method: "POST",
-    headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json",
-               "User-Agent": `${USER}-stats` },
-    body: JSON.stringify({ query }),
+const api = async (path) => {
+  const res = await fetch(`https://api.github.com${path}`, {
+    headers: {
+      Accept: "application/vnd.github+json",
+      "User-Agent": `${USER}-stats`,
+      ...(TOKEN ? { Authorization: `Bearer ${TOKEN}` } : {}),
+    },
   });
-  const json = await res.json();
-  if (json.errors) throw new Error(JSON.stringify(json.errors));
-  return json.data;
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText} on ${path}`);
+  return res.json();
 };
 
-const data = await gql(`{
-  user(login: "${USER}") {
-    contributionsCollection {
-      totalCommitContributions
-      totalPullRequestContributions
-      contributionCalendar { totalContributions }
-    }
-    repositories(first: 100, ownerAffiliations: [OWNER], privacy: PUBLIC, isFork: false) {
-      totalCount
-      nodes { languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
-        edges { size node { name } } } }
-    }
-  }
-}`);
+const profile = await api(`/users/${USER}`);
+const repos = (await api(`/users/${USER}/repos?per_page=100&type=owner`))
+  .filter((r) => !r.fork && !r.archived);
 
-const c = data.user.contributionsCollection;
-
-// Aggregate language bytes across every public repo, not just the newest one.
 const bytes = {};
-for (const repo of data.user.repositories.nodes)
-  for (const e of repo.languages.edges)
-    bytes[e.node.name] = (bytes[e.node.name] || 0) + e.size;
+const commitDays = new Set();
+let commits = 0;
+
+for (const repo of repos) {
+  const langs = await api(`/repos/${repo.full_name}/languages`);
+  for (const [name, size] of Object.entries(langs))
+    bytes[name] = (bytes[name] || 0) + size;
+
+  // Page through so the count stays right as the history grows.
+  for (let page = 1; page <= 10; page += 1) {
+    const list = await api(
+      `/repos/${repo.full_name}/commits?author=${USER}&per_page=100&page=${page}`,
+    );
+    for (const c of list) {
+      if (c.parents && c.parents.length > 1) continue;   // merge commit
+      commits += 1;
+      commitDays.add(c.commit.author.date.slice(0, 10));
+    }
+    if (list.length < 100) break;
+  }
+}
+
+const prs = await api(`/search/issues?q=author:${USER}+type:pr&per_page=1`);
+
 const total = Object.values(bytes).reduce((a, b) => a + b, 0);
 const [topLang, topBytes] = Object.entries(bytes).sort((a, b) => b[1] - a[1])[0] || ["—", 0];
 const topPct = total ? Math.round((topBytes / total) * 1000) / 10 : 0;
 
 const tiles = [
-  ["CONTRIBUTIONS", String(c.contributionCalendar.totalContributions)],
-  ["COMMITS", String(c.totalCommitContributions)],
-  ["PULL REQUESTS", String(c.totalPullRequestContributions)],
-  ["PUBLIC REPOS", String(data.user.repositories.totalCount)],
+  ["COMMITS", String(commits)],
+  ["PULL REQUESTS", String(prs.total_count)],
+  ["ACTIVE DAYS", String(commitDays.size)],
+  ["PUBLIC REPOS", String(profile.public_repos)],
   [topLang.toUpperCase(), `${topPct}%`],
 ];
 
@@ -100,7 +114,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" wid
     </circle>
     <text x="80" y="51" font-family="${MONO}" font-size="12.5" font-weight="600" fill="${ACCENT}" letter-spacing="3.6">SYSTEM ACTIVITY</text>
     <rect x="272" y="45.5" width="${W - 272 - 236}" height="1" fill="${BORDER}"/>
-    <text x="${W - 56}" y="50" text-anchor="end" font-family="${MONO}" font-size="10.5" fill="${DIM}" letter-spacing="1.4">LAST 12 MONTHS &#183; AS OF ${asOf}</text>
+    <text x="${W - 56}" y="50" text-anchor="end" font-family="${MONO}" font-size="10.5" fill="${DIM}" letter-spacing="1.4">PUBLIC REPOSITORIES &#183; AS OF ${asOf}</text>
     ${tileSvg}
   </g>
   <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="${R}" fill="none" stroke="${BORDER}" stroke-width="1.5"/>
