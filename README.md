@@ -273,12 +273,13 @@ What actually landed, grouped by day, most recent first. Generated from commit h
 
 | Day | What shipped | Commits |
 |:--|:--|--:|
-| `2026-09-22`<br/><sub>[`forgegtm`](https://github.com/KathiriyaHardik/forgegtm)</sub> | Restyle the technology ecosystem, and drop three tools<br/>Stop capability cards opening the strategy-call modal<br/>Rebuild the how-we-work section as five stages<br/>Add CI: lint, typecheck and build on every PR<br/><sub>+ 3 more</sub> | `7` |
+| `2026-10-01`<br/><sub>[`forgegtm`](https://github.com/KathiriyaHardik/forgegtm)</sub> | Rebuild the About page<br/>Add a markets column and rework the footer<br/>Simplify the closing CTA to one centred message | `3` |
+| `2026-09-22`<br/><sub>[`forgegtm`](https://github.com/KathiriyaHardik/forgegtm)</sub> | Restyle the technology ecosystem, and drop three tools<br/>Stop capability cards opening the strategy-call modal<br/>Rebuild the how-we-work section as five stages | `3` |
 | `2026-09-16`<br/><sub>[`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik)</sub> | Group the build log by day instead of listing commits | `1` |
 | `2026-09-15`<br/><sub>[`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik)</sub> | Drop the streak card from the activity section<br/>Build the activity card from public REST instead of contributionsCollection<br/>Rebase and retry when the build-log push races another commit<br/>Add build-log and activity-card workflow<br/><sub>+ 1 more</sub> | `5` |
 | `2026-09-13`<br/><sub>[`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik)</sub> | Rebuild the profile as a designed system rather than a README<br/>Render the ForgeGTM mark statically in the banner<br/>Add profile README, brand assets and contribution snake | `3` |
 
-<sub>Last 4 days of work &#183; 16 commits &#183; merges excluded &#183; regenerated daily by GitHub Actions, never hand-written.</sub>
+<sub>Last 5 days of work &#183; 15 commits &#183; merges excluded &#183; regenerated daily by GitHub Actions, never hand-written.</sub>
 <!-- BUILD-LOG:END -->
 
 <img src="assets/divider.svg" width="100%" alt="" />
