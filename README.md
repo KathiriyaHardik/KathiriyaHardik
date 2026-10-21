@@ -164,6 +164,6 @@ Based in Stuttgart, Germany. Happy to talk about **AI engineering**, **agentic A
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=KathiriyaHardik&style=flat-square&color=2d5ef5&label=Profile+views" alt="Profile views" />
+<img src="https://hits.sh/github.com/KathiriyaHardik.svg?style=flat-square&label=Profile%20views&color=2d5ef5&labelColor=0a0a0c" alt="Profile views" />
 
 </div>
