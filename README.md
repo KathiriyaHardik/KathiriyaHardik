@@ -107,14 +107,14 @@ What actually landed, grouped by day, most recent first. Generated from commit h
 
 | Day | What shipped | Commits |
 |:--|:--|--:|
+| `2026-10-21`<br/><sub>[`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik)</sub> | Rebuild the profile around AI Lab and the thesis | `1` |
 | `2026-10-16`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Add Company Research Agent (project 07) and mark it live in the roadmap<br/>Add Second-Brain Agent (project 06) and mark it live in the roadmap | `2` |
 | `2026-10-14`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Add Cover Letter Agent (project 05) and mark it live in the roadmap | `1` |
 | `2026-10-12`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Add German Letter Explainer (project 04) and mark it live in the roadmap<br/>Add Chat with Your Notes (project 03) and mark it live in the roadmap | `2` |
 | `2026-10-09`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Add Job-Fit Checker (project 02) and mark it live in the roadmap | `1` |
 | `2026-10-07`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Keep banner content visible when SVG animation doesn't run<br/>Rebrand repo as Hardik's AI Lab with an 8-project roadmap | `2` |
-| `2026-10-05`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab) [`agentic-knowledge-lab`](https://github.com/KathiriyaHardik/agentic-knowledge-lab)</sub> | Replace README mermaid diagrams with animated SVGs<br/>Simplify README diagrams so they render cleanly on GitHub<br/>Add showcase READMEs with screenshots and animated banner<br/>Add AI job application tracker (Excel CRM)<br/><sub>+ 2 more</sub> | `6` |
 
-<sub>Last 6 days of work &#183; 14 commits &#183; merges excluded &#183; regenerated daily by GitHub Actions, never hand-written.</sub>
+<sub>Last 6 days of work &#183; 9 commits &#183; merges excluded &#183; regenerated daily by GitHub Actions, never hand-written.</sub>
 <!-- BUILD-LOG:END -->
 
 <img src="assets/divider.svg" width="100%" alt="" />
