@@ -82,8 +82,6 @@ Every couple of weeks I build one small AI tool that solves a real problem, for 
 
 <sub>📂 Each project folder has its own README covering what it does, how to run it and what I learned building it.</sub>
 
-🧪 **Also public:** [Agentic Knowledge Lab](https://github.com/KathiriyaHardik/agentic-knowledge-lab), an experiment that turns meeting transcripts into structured knowledge with the Claude API, checks every quote against the source and scores the result against hand-labelled data.
-
 <img src="assets/divider.svg" width="100%" alt="" />
 
 <h2 id="thesis"><img src="assets/label-03.svg" height="30" alt="03 — THESIS" /></h2>
