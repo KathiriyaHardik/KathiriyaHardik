@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/hero.svg" alt="Hardik Kathiriya — AI Lab · Future AI Engineer" width="100%" />
+  <img src="assets/hero.svg" alt="Hardik Kathiriya — AI Lab · AI Engineer" width="100%" />
 </div>
 
 <div align="center">
