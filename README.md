@@ -105,14 +105,14 @@ What actually landed, grouped by day, most recent first. Generated from commit h
 
 | Day | What shipped | Commits |
 |:--|:--|--:|
-| `2026-10-21`<br/><sub>[`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik) [`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Swap the profile-view counter to hits.sh<br/>Remove the Agentic Knowledge Lab mention<br/>Drop "Future" from the AI Engineer title<br/>Tidy the lab intro<br/><sub>+ 1 more</sub> | `5` |
-| `2026-10-16`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Add Company Research Agent (project 07) and mark it live in the roadmap<br/>Add Second-Brain Agent (project 06) and mark it live in the roadmap | `2` |
-| `2026-10-14`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Add Cover Letter Agent (project 05) and mark it live in the roadmap | `1` |
-| `2026-10-12`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Add German Letter Explainer (project 04) and mark it live in the roadmap<br/>Add Chat with Your Notes (project 03) and mark it live in the roadmap | `2` |
-| `2026-10-09`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Add Job-Fit Checker (project 02) and mark it live in the roadmap | `1` |
-| `2026-10-07`<br/><sub>[`ai-lab`](https://github.com/KathiriyaHardik/ai-lab)</sub> | Keep banner content visible when SVG animation doesn't run<br/>Rebrand repo as Hardik's AI Lab with an 8-project roadmap | `2` |
+| `2026-10-25`<br/><sub>[`novawerk-lab`](https://github.com/KathiriyaHardik/novawerk-lab)</sub> | Finish the NovaWerk rename and give every project folder a plain name<br/>Point every link at the renamed novawerk-lab repo<br/>Rename the lab to NovaWerk Lab, part of NovaWerk AI<br/>Add the lab's landing page as a GitHub Pages website<br/><sub>+ 3 more</sub> | `7` |
+| `2026-10-21`<br/><sub>[`KathiriyaHardik`](https://github.com/KathiriyaHardik/KathiriyaHardik) [`novawerk-lab`](https://github.com/KathiriyaHardik/novawerk-lab)</sub> | Swap the profile-view counter to hits.sh<br/>Remove the Agentic Knowledge Lab mention<br/>Drop "Future" from the AI Engineer title<br/>Tidy the lab intro<br/><sub>+ 1 more</sub> | `5` |
+| `2026-10-16`<br/><sub>[`novawerk-lab`](https://github.com/KathiriyaHardik/novawerk-lab)</sub> | Add Company Research Agent (project 07) and mark it live in the roadmap<br/>Add Second-Brain Agent (project 06) and mark it live in the roadmap | `2` |
+| `2026-10-14`<br/><sub>[`novawerk-lab`](https://github.com/KathiriyaHardik/novawerk-lab)</sub> | Add Cover Letter Agent (project 05) and mark it live in the roadmap | `1` |
+| `2026-10-12`<br/><sub>[`novawerk-lab`](https://github.com/KathiriyaHardik/novawerk-lab)</sub> | Add German Letter Explainer (project 04) and mark it live in the roadmap<br/>Add Chat with Your Notes (project 03) and mark it live in the roadmap | `2` |
+| `2026-10-09`<br/><sub>[`novawerk-lab`](https://github.com/KathiriyaHardik/novawerk-lab)</sub> | Add Job-Fit Checker (project 02) and mark it live in the roadmap | `1` |
 
-<sub>Last 6 days of work &#183; 13 commits &#183; merges excluded &#183; regenerated daily by GitHub Actions, never hand-written.</sub>
+<sub>Last 6 days of work &#183; 18 commits &#183; merges excluded &#183; regenerated daily by GitHub Actions, never hand-written.</sub>
 <!-- BUILD-LOG:END -->
 
 <img src="assets/divider.svg" width="100%" alt="" />
